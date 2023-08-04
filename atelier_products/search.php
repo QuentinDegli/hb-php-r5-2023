@@ -26,3 +26,4 @@ if (isset($_GET['search'])) {
 ?>
 
 <?php require_once 'layout/footer.php';
+ 

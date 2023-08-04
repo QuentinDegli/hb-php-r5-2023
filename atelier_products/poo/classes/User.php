@@ -6,6 +6,17 @@ class User {
     private string $lastname;
     private int $age;
 
+
+public function getFullName(): string
+{
+    return $this->firstname . " " .$this->lastname;
+}
+
+public function getIntroduction(): string
+{
+    return "Bonjour, je suis " . $this->getFullName();
+}
+
     public function getFirstname(): string  
     {
         return $this->firstname;
@@ -26,6 +37,7 @@ class User {
         echo 'Veuillez entrer un nom de famille';
     } else {
         $this->lastname = $lastname;
+        
     }
     }
 
