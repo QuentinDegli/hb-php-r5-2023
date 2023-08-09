@@ -17,7 +17,7 @@ class ProductCirc extends Product
   {
     parent::displayInfos();
     echo "<br />";
-    echo "Coucou, je suis circulaire, mon prix est " . $this->price . " et mon diamètre est " . $this->diameter;
+    echo "Coucou, je suis circulaire, mon prix est " . $this->price . " et mon diamètre est " . $this->diameter; 
   }
 
   public function getDiameter(): float
